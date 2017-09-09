@@ -1,4 +1,4 @@
-# [Take: mobile app landing page template](https://gbaciulis.github.io/take-app-landing-page/) 
+# [Take: mobile app landing page template](https://jasonbaciulis.github.io/take-app-landing-page/) 
 
 Take is a fictitious mobile app for taking photos and adding effects. It was built on Bootstrap 4 grid and is fully responsive accross all devices.
 
@@ -6,7 +6,7 @@ Here you can find the [original PSD template](http://blazrobar.com/free-psd-webs
 
 This project was developed with HTML5, CSS and Bootstrap 4.
 
-## [VIEW LIVE DEMO](https://gbaciulis.github.io/take-app-landing-page/)
+## [VIEW LIVE DEMO](https://jasonbaciulis.github.io/take-app-landing-page/)
 
-* Follow Gediminas : [Twitter](https://twitter.com/gbaciulis), [Linkedin](https://lt.linkedin.com/in/gbaciulis).
+* Follow Jason : [Twitter](https://twitter.com/jasonbaciulis), [Linkedin](https://lt.linkedin.com/in/jasonbaciulis).
 * Follow Blaz: [Twitter](https://twitter.com/blazrobar), [Facebook](https://www.facebook.com/blazrobar/).
