@@ -47,10 +47,6 @@ h4 {
 	margin-bottom: 1.5em;
 }
 
-.margin-bottom {
-	margin-bottom: 30px;
-}
-
 .gray p {
 	color: #959595;
 }
@@ -366,14 +362,14 @@ footer .social-icons i:hover {
 
 @font-face {
 	font-family: 'icomoon';
-	src: url('../fonts/icomoon.eot?pl37jc');
-	src: url('../fonts/icomoon.eot?pl37jc#iefix') format('embedded-opentype'), url('../fonts/icomoon.ttf?pl37jc') format('truetype'), url('../fonts/icomoon.woff?pl37jc') format('woff'), url('../fonts/icomoon.svg?pl37jc#icomoon') format('svg');
+	src: url('../font/icomoon.eot?pl37jc');
+	src: url('../font/icomoon.eot?pl37jc#iefix') format('embedded-opentype'), url('../font/icomoon.ttf?pl37jc') format('truetype'), url('../font/icomoon.woff?pl37jc') format('woff'), url('../font/icomoon.svg?pl37jc#icomoon') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
 
 i {
-	/* use !important to prevent issues with browser extensions that change fonts */
+	/* use !important to prevent issues with browser extensions that change font */
 	font-family: 'icomoon' !important;
 	speak: none;
 	font-style: normal;
