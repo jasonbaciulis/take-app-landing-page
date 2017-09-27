@@ -9,7 +9,7 @@ Here you can find the [PSD design template](http://blazrobar.com/free-psd-websit
 ## This project utilizes the best performance optimization practises using [Webpack](https://webpack.js.org/):
 
 * All assets are minified, images and SVGs are optimized.
-* For faster page load critical CSS is inlined in HTML and loaded asynchronously using [loadCSS](https://github.com/filamentgroup/loadCSS) function and [Critical](https://github.com/addyosmani/critical).
+* For faster page load render blocking CSS is inlined in HTML and loaded asynchronously using [loadCSS](https://github.com/filamentgroup/loadCSS) function and [Critical](https://github.com/addyosmani/critical).
 * Unused Bootstrap CSS is removed with [Purify CSS](https://github.com/webpack-contrib/purifycss-webpack).
 * All external scripts are loaded from CDNs and are either defered or loaded async.
 
