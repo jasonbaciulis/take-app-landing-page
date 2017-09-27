@@ -13,7 +13,7 @@ Here you can find the [PSD design template](http://blazrobar.com/free-psd-websit
 * Unused Bootstrap CSS is removed with [Purify CSS](https://github.com/webpack-contrib/purifycss-webpack).
 * All external scripts are loaded from CDNs and are either defered or loaded async.
 
-Here is the result of the test on Google PageSpeed Insights:
+__Here is the result of the test on Google PageSpeed Insights:__
 
 ![PageSpeed test results](docs/google-score.png)
 
