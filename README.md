@@ -13,6 +13,10 @@ Here you can find the [PSD design template](http://blazrobar.com/free-psd-websit
 * Unused Bootstrap CSS is removed with [Purify CSS](https://github.com/webpack-contrib/purifycss-webpack).
 * All external scripts are loaded from CDNs and are either defered or loaded async.
 
+Here is the result of the test on Google PageSpeed Insights:
+
+![PageSpeed test results](docs/google-score.png)
+
 ## [VIEW LIVE DEMO](https://jasonbaciulis.github.io/take-app-landing-page/)
 
 * Follow Jason : [Twitter](https://twitter.com/jasonbaciulis), [Linkedin](https://lt.linkedin.com/in/jasonbaciulis).
