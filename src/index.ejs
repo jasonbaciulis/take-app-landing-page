@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Take App</title>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+</head>
+
+<body>
+	<svg xmlns="http://www.w3.org/2000/svg" style="display:none">
+		<defs>
+			<symbol id="icon-check" viewBox="0 0 24 24">
+				<path d="M9 16.172L19.594 5.578 21 6.984l-12 12-5.578-5.578L4.828 12z" />
+			</symbol>
+			<symbol id="icon-heart-o" viewBox="0 0 28 28">
+				<path d="M26 9.312c0-4.391-2.969-5.313-5.469-5.313-2.328 0-4.953 2.516-5.766 3.484-.375.453-1.156.453-1.531 0-.812-.969-3.437-3.484-5.766-3.484-2.5 0-5.469.922-5.469 5.313 0 2.859 2.891 5.516 2.922 5.547l9.078 8.75 9.063-8.734C23.109 14.828 26 12.172 26 9.312zm2 0c0 3.75-3.437 6.891-3.578 7.031l-9.734 9.375c-.187.187-.438.281-.688.281s-.5-.094-.688-.281l-9.75-9.406c-.125-.109-3.563-3.25-3.563-7 0-4.578 2.797-7.313 7.469-7.313 2.734 0 5.297 2.156 6.531 3.375 1.234-1.219 3.797-3.375 6.531-3.375 4.672 0 7.469 2.734 7.469 7.313z"
+				/>
+			</symbol>
+			<symbol id="icon-twitter" viewBox="0 0 26 28">
+				<path d="M25.312 6.375c-.688 1-1.547 1.891-2.531 2.609.016.219.016.438.016.656 0 6.672-5.078 14.359-14.359 14.359-2.859 0-5.516-.828-7.75-2.266.406.047.797.063 1.219.063 2.359 0 4.531-.797 6.266-2.156-2.219-.047-4.078-1.5-4.719-3.5.313.047.625.078.953.078.453 0 .906-.063 1.328-.172-2.312-.469-4.047-2.5-4.047-4.953v-.063c.672.375 1.453.609 2.281.641-1.359-.906-2.25-2.453-2.25-4.203 0-.938.25-1.797.688-2.547 2.484 3.062 6.219 5.063 10.406 5.281-.078-.375-.125-.766-.125-1.156 0-2.781 2.25-5.047 5.047-5.047 1.453 0 2.766.609 3.687 1.594 1.141-.219 2.234-.641 3.203-1.219-.375 1.172-1.172 2.156-2.219 2.781 1.016-.109 2-.391 2.906-.781z"
+				/>
+			</symbol>
+			<symbol id="icon-linkedin" viewBox="0 0 24 28">
+				<path d="M5.453 9.766V25.25H.297V9.766h5.156zm.328-4.782c.016 1.484-1.109 2.672-2.906 2.672h-.031C1.11 7.656 0 6.468 0 4.984c0-1.516 1.156-2.672 2.906-2.672 1.766 0 2.859 1.156 2.875 2.672zM24 16.375v8.875h-5.141v-8.281c0-2.078-.75-3.5-2.609-3.5-1.422 0-2.266.953-2.641 1.875-.125.344-.172.797-.172 1.266v8.641H8.296c.063-14.031 0-15.484 0-15.484h5.141v2.25h-.031c.672-1.062 1.891-2.609 4.672-2.609 3.391 0 5.922 2.219 5.922 6.969z"
+				/>
+			</symbol>
+			<symbol id="icon-long-arrow-right" viewBox="0 0 27 28">
+				<path d="M27 13.953c0 .141-.063.281-.156.375l-6 5.531c-.156.141-.359.172-.547.094-.172-.078-.297-.25-.297-.453V16H.5c-.281 0-.5-.219-.5-.5v-3c0-.281.219-.5.5-.5H20V8.5c0-.203.109-.375.297-.453s.391-.047.547.078l6 5.469c.094.094.156.219.156.359z"
+				/>
+			</symbol>
+			<symbol id="icon-apple" viewBox="0 0 22 28">
+				<path d="M21.766 18.984c-.391 1.234-1.016 2.547-1.922 3.906-1.344 2.047-2.688 3.063-4.016 3.063-.531 0-1.25-.172-2.188-.5-.922-.344-1.719-.5-2.359-.5-.625 0-1.375.172-2.219.516-.859.359-1.547.531-2.063.531-1.609 0-3.156-1.359-4.703-4.047C.78 19.265-.001 16.656-.001 14.094c0-2.391.594-4.328 1.766-5.844C2.937 6.75 4.406 6 6.203 6c.766 0 1.672.156 2.766.469 1.078.313 1.797.469 2.156.469.453 0 1.203-.172 2.234-.531 1.031-.344 1.937-.531 2.703-.531 1.25 0 2.359.344 3.328 1.016.547.375 1.094.906 1.625 1.563-.812.688-1.406 1.297-1.781 1.844-.672.969-1.016 2.047-1.016 3.234 0 1.281.359 2.453 1.078 3.484s1.547 1.687 2.469 1.969zM15.891.656c0 .641-.156 1.359-.453 2.125-.313.781-.797 1.5-1.453 2.156-.562.562-1.125.938-1.687 1.125-.359.109-.891.203-1.625.266.031-1.547.438-2.891 1.219-4.016S13.986.421 15.798 0c.031.141.063.25.078.344 0 .109.016.203.016.313z"
+				/>
+			</symbol>
+			<symbol id="icon-windows" viewBox="0 0 26 28">
+				<path d="M10.656 15.719v10.172L0 24.422v-8.703h10.656zm0-11.61v10.297H0V5.578zM26 15.719V28l-14.172-1.953V15.719H26zM26 2v12.406H11.828V3.953z"
+				/>
+			</symbol>
+		</defs>
+	</svg>
+	<header class="bgc-parallax">
+		<div class="masthead bgc"></div>
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<a href="#"><img src="img/Take-logo.png" class="logo" alt="Take Logo"></a>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-lg-6 col-sm-12 headline">
+					<h1>Picture perfect</h1>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+						aliqua.
+					</p>
+					<a href="#" class="arrow-link">Learn More
+						<svg class="icon-long-arrow-right icon">
+							<use xlink:href="#icon-long-arrow-right"></use>
+						</svg>
+					</a>
+				</div>
+				<div class="col-lg-6 d-none d-lg-block col-iphone">
+					<div class="phone">
+						<img src="img/iphone.png" alt="iPhone mockup">
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+
+	<main>
+		<div class="container">
+			<div class="row gray fading padding-top">
+				<div class="col-md-6 col-12">
+					<h2>Start something new</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+						aliqua.
+					</p>
+					<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+					<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+						occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					</p>
+					<p>
+						Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.
+					</p>
+				</div>
+
+				<div class="col-md-6 col-12">
+					<h2>Pixel perfect</h2>
+					<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos
+						qui ratione voluptatem sequi nesciunt.</p>
+					<p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius
+						modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+					<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos
+						qui ratione voluptatem sequi nesciunt.</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="container-fluid">
+			<div class="row colorful-grid fading">
+				<div class="col-xl-3 col-md-4 col-12 pink-col">
+					<div class="wrap-text">
+						<h3>Design quality</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut adipisicing.</p>
+						<a href="" class="arrow-link">Find Out More<svg class="icon-long-arrow-right icon">
+							<use xlink:href="#icon-long-arrow-right"></use>
+						</svg></a>
+					</div>
+				</div>
+
+				<div class="col-xl-3 col-md-4 col-12 blue-col">
+					<div class="wrap-text">
+						<h3>Built to last</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut adipisicing.</p>
+						<a href="" class="arrow-link">Find Out More<svg class="icon-long-arrow-right icon">
+							<use xlink:href="#icon-long-arrow-right"></use>
+						</svg></a>
+					</div>
+				</div>
+
+				<div class="col-xl-3 col-md-4 col-12 sm-img">
+					<div class="wrap-text">
+						<h3>Our clients</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+						<a href="" class="arrow-link">Get Insights<svg class="icon-long-arrow-right icon">
+							<use xlink:href="#icon-long-arrow-right"></use>
+						</svg></a>
+					</div>
+
+					<svg class="icon-heart-o icon">
+						<use xlink:href="#icon-heart-o"></use>
+					</svg>
+				</div>
+
+				<div class="col-xl-3 col-md-4 col-12 velvet-col">
+					<div class="wrap-text">
+						<h3>How to shoot great</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut adipisicing.</p>
+						<a href="" class="arrow-link">Find Out More<svg class="icon-long-arrow-right icon">
+							<use xlink:href="#icon-long-arrow-right"></use>
+						</svg></a>
+					</div>
+				</div>
+
+				<div class="col-xl-6 col-md-8 col-12 lg-img">
+					<div class="wrap-text">
+						<h3>Sign up & see why</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut adipisicing.</p>
+						<a href="" class="arrow-link">Get Started Now<svg class="icon-long-arrow-right icon">
+							<use xlink:href="#icon-long-arrow-right"></use>
+						</svg></a>
+					</div>
+
+					<svg class="icon-heart-o icon">
+						<use xlink:href="#icon-heart-o"></use>
+					</svg>
+				</div>
+
+				<div class="col-xl-3 col-md-6 col-12 green-col">
+					<div class="wrap-text">
+						<h3>Perfect pictures</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut adipisicing.</p>
+						<a href="" class="arrow-link">Find Out More<svg class="icon-long-arrow-right icon">
+							<use xlink:href="#icon-long-arrow-right"></use>
+						</svg></a>
+					</div>
+				</div>
+
+				<div class="col-xl-3 col-md-6 col-12 sweater-img">
+					<div class="wrap-text">
+						<h3>Start smth new</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut adipisicing.</p>
+						<a href="" class="arrow-link">Get Started Now<svg class="icon-long-arrow-right icon">
+							<use xlink:href="#icon-long-arrow-right"></use>
+						</svg></a>
+					</div>
+
+					<svg class="icon-heart-o icon">
+						<use xlink:href="#icon-heart-o"></use>
+					</svg>
+				</div>
+			</div>
+		</div>
+
+		<!-- 			<div class="rotated-grey">
+              <p>takeapp.com</p>
+            </div> -->
+
+		<div class="container">
+			<div class="row a-look gray fading">
+				<div class="col-12">
+					<h2>A look at the details</h2>
+				</div>
+
+				<div class="col-lg-3 col-md-6 col-12">
+					<h4>Web based</h4>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+						aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+					</p>
+				</div>
+
+				<div class="col-lg-3 col-md-6 col-12">
+					<h4>Performance</h4>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+						aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+					</p>
+				</div>
+
+				<div class="col-lg-3 col-md-6 col-12">
+					<h4>Cultural</h4>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+						aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+					</p>
+				</div>
+
+				<div class="col-lg-3 col-md-6 col-12">
+					<h4>Sustainability</h4>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+						aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+					</p>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="bgc-parallax car">
+			<div class="old-car bgc"></div>
+			<div class="container">
+				<div class="row fading">
+					<div class="col-12 wrap-text">
+						<h2>More power<br> behind every pixel.</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+							aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+						</p>
+						<a href="#" class="arrow-link">See the options
+							<svg class="icon-long-arrow-right icon">
+								<use xlink:href="#icon-long-arrow-right"></use>
+							</svg>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- 			<div class="rotated-white">
+              <p>takeapp.com</p>
+            </div> -->
+		<div class="green-section">
+			<div class="container">
+				<div class="row fading">
+					<div class="col-12">
+						<h2>Reasons to get onboard</h2>
+					</div>
+
+					<div class="col-md-4 col-12">
+						<h4>Web based</h4>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+							aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+						</p>
+					</div>
+
+					<div class="col-md-4 col-12">
+						<h4>Team login</h4>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+							aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+						</p>
+					</div>
+
+					<div class="col-md-4 col-12">
+						<h4>Great support</h4>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+							aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- 			<div class="rotated-grey">
+              <p>takeapp.com</p>
+            </div> -->
+		<div class="prices">
+			<div class="container">
+				<div class="row fading">
+					<div class="col-lg-6 plan">
+						<span class="legacy">Legacy</span>
+						<h2>Go Solo</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+							aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+						<a href="#" class="buy-button">Buy now $9</a>
+						<svg class="icon-apple icon">
+							<use xlink:href="#icon-apple"></use>
+						</svg>
+						<svg class="icon-windows icon">
+							<use xlink:href="#icon-windows"></use>
+						</svg>
+					</div>
+
+					<div class="col-lg-6 plan active">
+						<span class="popular">Most popular</span>
+						<h2>Team Plan</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+							aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+						<a href="#" class="buy-button">Buy now $18</a>
+						<svg class="icon-apple icon">
+							<use xlink:href="#icon-apple"></use>
+						</svg>
+						<svg class="icon-windows icon">
+							<use xlink:href="#icon-windows"></use>
+						</svg>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+	<!-- /end of main content -->
+
+	<!-- beginning of footer -->
+
+	<footer>
+		<div class="container">
+			<div class="row fading">
+				<div class="col-lg-6 col-12">
+					<h4>Get in touch</h4>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+						aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+					</p>
+				</div>
+
+				<div class="col-lg-5 offset-lg-1 col-12">
+					<h4>Stay in touch</h4>
+
+					<div class="input-group">
+						<input type="text" class="form-control" placeholder="Your Email">
+						<span class="input-group-btn">
+                        <button class="btn btn-secondary" type="button">
+							<svg class="icon-check icon">
+								<use xlink:href="#icon-check"></use>
+							</svg>
+						</button>
+                      </span>
+					</div>
+
+					<p class="below-input">We don’t send spam. Actually, who are we kiding, we’ll spam the shit out of your inbox.</p>
+				</div>
+			</div>
+
+			<div class="row fading">
+				<div class="col-lg-2 col-4">
+					<h4>Resources</h4>
+					<a href="#">Tour</a>
+					<a href="#">Customers</a>
+					<a href="#">Pricing and Plans</a>
+					<a href="#">New Features</a>
+					<a href="#">Education</a>
+				</div>
+
+				<div class="col-lg-2 col-4">
+					<h4>Features</h4>
+					<a href="#">Tour</a>
+					<a href="#">Customers</a>
+					<a href="#">Pricing and Plans</a>
+					<a href="#">New Features</a>
+					<a href="#">Education</a>
+				</div>
+
+				<div class="col-lg-2 col-4">
+					<h4>How To's</h4>
+					<a href="#">Tour</a>
+					<a href="#">Customers</a>
+					<a href="#">Pricing and Plans</a>
+					<a href="#">New Features</a>
+					<a href="#">Education</a>
+				</div>
+
+				<div class="col-lg-5 offset-lg-1 col-12">
+					<p>Built by <a href="http://bannerlab.uk" class="author-link">Jason Baciulis</a></p>
+
+					<div class="social-icons">
+						<a href="https://twitter.com/jasonbaciulis">
+							<svg class="icon-twitter icon">
+								<use xlink:href="#icon-twitter"></use>
+							</svg>
+						</a>
+						<a href="https://lt.linkedin.com/in/jasonbaciulis">
+							<svg class="icon-linkedin icon">
+								<use xlink:href="#icon-linkedin"></use>
+							</svg>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- end of footer -->
+	<!-- <script defer src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> -->
+	<!-- <script defer src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script> -->
+	<!-- <script defer src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script> -->
+	<script defer="defer" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/TweenMax.min.js"></script>
+	<script defer="defer" src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
+	<script defer="defer" src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.min.js"></script>
+	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.js"></script> -->
+</body>
+
+</html>

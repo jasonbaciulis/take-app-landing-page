@@ -1,0 +1,439 @@
+@import './bootstrap/bootstrap.scss';
+
+body {
+	font-size: 14px;
+	font-family: "Open Sans", sans-serif;
+	overflow-x: hidden;
+}
+
+p {
+	line-height: 1.85;
+	color: #fff;
+}
+
+a:hover {
+	text-decoration: none;
+	color: inherit;
+}
+
+a:focus {
+	text-decoration: underline;
+	color: inherit;
+}
+
+h1,
+h2,
+h3 {
+	font-weight: 300;
+	margin-bottom: 30px;
+	line-height: 1.2;
+}
+
+h1 {
+	color: #fff;
+	font-size: 4.28em;
+}
+
+h2 {
+	font-size: 2.5em;
+}
+
+h3 {
+	font-size: 2.14em;
+	margin-bottom: .7em;
+}
+
+h4 {
+	font-weight: 700;
+	font-size: 0.92em;
+	margin-bottom: 1.5em;
+}
+
+main {
+	background-color: #fff;
+}
+
+.gray p {
+	color: #959595;
+}
+
+.arrow-link {
+	color: #fff;
+	font-weight: 600;
+}
+
+
+/*========================= 
+		Parallax Sections
+===========================*/
+
+.bgc-parallax {
+	position: relative;
+	// height: 67.85em;
+}
+
+@media (max-width: 992px) {
+	.bgc-parallax {
+		height: 67.85em;
+	}
+}
+
+.bgc-parallax.car {
+	overflow: hidden;
+	height: 50em;
+}
+
+.bgc {
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: absolute;
+	width: 100%;
+	// height: 170%;
+	top: 0;
+}
+
+.masthead {
+	background-image: url('img/cover-image.jpg');
+	background-position-x: 60%;
+	background-position-y: 90%;
+	position: fixed;
+	z-index: -1;
+	height: 100%;
+}
+
+.old-car {
+	background-image: url('img/old-car.jpg');
+	background-position-y: center;
+	background-position-x: 35%;
+	height: 150%;
+}
+
+.logo {
+	margin-top: 55px;
+}
+
+.headline {
+	padding-top: 17.85em;
+	color: #fff;
+	max-width: 500px;
+}
+
+.phone img {
+	height: auto;
+	position: relative;
+	top: 105px;
+}
+
+
+
+
+/*========================= 
+		Columns
+===========================*/
+
+.colorful-grid {
+	padding-bottom: 2em;
+}
+
+.colorful-grid div[class*="col"] {
+	height: 280px;
+}
+
+.gray div[class*="col"],
+.green-section div[class*="col"],
+footer div[class*="col"] {
+	margin-bottom: 2em;
+}
+
+.row.gray {
+	padding: 5em 0;
+}
+
+.row.gray.padding-top {
+	padding: 7.5em 0 5em;
+}
+
+.green-section {
+	background-color: #82ca9c;
+	color: #fff;
+	padding: 7.5em 0;
+}
+
+footer {
+	background-color: #192431;
+	padding: 8.8em 0 7em;
+}
+
+
+/*========================= 
+		Main grid
+===========================*/
+
+.pink-col {
+	background-color: #f5989d;
+}
+
+.blue-col {
+	background-color: #615f7d;
+}
+
+.velvet-col {
+	background-color: #bd8cbf;
+}
+
+.green-col {
+	background-color: #82ca9c;
+}
+
+.sm-img,
+.sweater-img,
+.lg-img {
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.sm-img {
+	background-image: url('img/photographer.jpg');
+}
+
+.sweater-img {
+	background-image: url('img/sweater.jpg');
+}
+
+.lg-img {
+	background-image: url('img/sunny-winter.jpg');
+}
+
+.colorful-grid .wrap-text {
+	color: #fff;
+	max-width: 480px;
+	padding: 45px 20px 0 20px;
+}
+
+.wrap-text p {
+	font-size: 13px;
+}
+
+
+/*========================= 
+	   Old Car section
+===========================*/
+
+.car .wrap-text {
+	color: #fff;
+	max-width: 535px;
+	position: absolute;
+	bottom: 15%;
+}
+
+.car .wrap-text h2 {
+	font-size: 4.28em;
+}
+
+
+/*========================= 
+	   Closing
+===========================*/
+
+.prices {
+	background-color: #f6f7fa;
+	padding: 7.5em 0;
+}
+
+.prices .row {
+	padding: 0 1.5em;
+}
+
+.plan {
+	padding: 45px 55px;
+}
+
+.plan.active {
+	border-radius: 0.375rem;
+	background-color: #fff;
+	box-shadow: 5px 5px 25px 0px rgba(46, 61, 73, 0.2);
+}
+
+.legacy,
+.popular {
+	color: #fff;
+	border-radius: 5px;
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 11px;
+	display: inline-block;
+	margin-bottom: 1.4em;
+	padding: 5px 20px;
+}
+
+.popular {
+	background-color: #bd8cbf;
+}
+
+.legacy {
+	background-color: #e1e1e1;
+}
+
+.prices h2 {
+	margin-bottom: .5em;
+}
+
+.prices p {
+	color: #8a9ead;
+	margin-bottom: 1.5em;
+}
+
+.buy-button {
+	background-color: #82ca9c;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 13px;
+	-webkit-font-smoothing: antialiased;
+	font-weight: 600;
+	text-align: center;
+	letter-spacing: 1px;
+	display: block;
+	width: 150px;
+	padding: 14px 22px;
+	border-radius: 4px;
+	transition: all 0.3s ease;
+	box-shadow: 8px 10px 20px 0px rgba(46, 61, 73, 0.15);
+	border: 0.125rem solid transparent;
+	margin-bottom: 2em;
+}
+
+.buy-button:hover {
+	background-color: #72bd8d;
+	color: #fff;
+	border-color: transparent;
+	box-shadow: 2px 4px 8px 0px rgba(46, 61, 73, 0.2);
+}
+
+
+/*========================= 
+		Footer
+===========================*/
+
+footer p {
+	color: #f6f7fa;
+	font-size: 13px;
+}
+
+footer h4 {
+	color: #f6f7fa;
+}
+
+footer a {
+	color: #f6f7fa;
+	display: block;
+	font-size: 13px;
+	margin-bottom: 0.5rem;
+}
+
+footer a:hover {
+	color: #82ca9c;
+	transition: ease-in-out 0.2s;
+}
+
+.social-icons .icon:hover {
+	fill: #82ca9c;
+	transition: ease-in-out 0.2s;
+}
+
+.social-icons a,
+.author-link {
+	display: inline-block;
+}
+
+.form-control {
+	height: 60px;
+	padding-left: 20px;
+	border: none;
+	border-radius: 3px;
+}
+
+.form-control:hover {
+	border: none;
+}
+
+.input-group-btn > .btn {
+	height: 60px;
+	width: 70px;
+	background-color: #82ca9c;
+	border: none;
+	border-radius: 0 3px 3px 0;
+	transition: background-color ease-in-out 0.2s;
+	cursor: pointer;
+}
+
+.input-group-btn > .btn:hover {
+	background-color: #72bd8d;
+	border: none;
+}
+
+.below-input {
+	color: #57697f;
+	font-size: 12px;
+	width: 85%;
+	margin-top: 10px;
+}
+
+
+/*========================= 
+			Icons
+===========================*/
+
+.icon {
+	fill: #fff;
+	display: inline-block;
+	width: 25px;
+	height: 25px;
+}
+
+.icon-heart-o {
+	float: right;
+	margin-right: 30px;
+}
+
+.icon-windows,
+.icon-apple {
+	fill: #c5c5c5;
+	margin-right: 1rem;
+}
+
+.icon-check {
+	width: 2em;
+	height: 2em;
+}
+
+.icon-twitter,
+.icon-linkedin {
+	margin-right: 1rem;
+}
+
+.icon-long-arrow-right {
+	position: relative;
+	top: 4px;
+	left: 7px;
+	width: 16px;
+	height: 16px;
+	transition: all .2s ease-in-out;
+}
+
+.arrow-link:hover .icon-long-arrow-right {
+	left: 14px;
+}
+
+// animation
+
+.fading {
+	opacity: 0;
+	// transform: translateY(50px);
+	transition: opacity 1s ease-out;
+}
+
+.fade-active {
+	opacity: 1;
+	// transform: translateY(0);
+}

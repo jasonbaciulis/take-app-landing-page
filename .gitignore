@@ -23,9 +23,6 @@ node_modules
 # Webpack
 webpack
 
-# Source files
-src
-
 # =========================
 # Operating System Files
 # =========================
